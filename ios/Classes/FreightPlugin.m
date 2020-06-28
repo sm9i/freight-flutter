@@ -94,6 +94,7 @@
         [self.locationManager requestLocationWithReGeocode:NO completionBlock:^(CLLocation *location, AMapLocationReGeocode *regeocode, NSError *error) {
             if (error) {
                 NSLog(@"获取定位信息失败: %zd, %@", error.code, error.localizedDescription);
+                result(@{@"e":@"e"});
             } else {
                 result(@{
                         @"latitude": @(location.coordinate.latitude),

@@ -17,7 +17,8 @@ A new flutter plugin project.
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
   s.platform = :ios, '8.0'
-  s.dependency 'AMapLocation', '2.6.4'
+  # s.dependency 'AMapLocation', '2.6.4'
+  s.dependency 'AMapLocation-NO-IDFA', '2.6.7'
   s.dependency 'GMObjC', '3.0.0'
   s.vendored_frameworks = 'Frameworks/*.framework'
 
